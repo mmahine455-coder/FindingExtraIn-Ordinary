@@ -1,185 +1,595 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="bn">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0b0718">
-<title>FindingExtraOrdinary — Anime Wallpaper Community</title><link rel="icon" href="favicon.svg" type="image/svg+xml">
-<style>
-:root{--bg:#080614;--panel:#120d26;--panel2:#191130;--line:#49316c;--muted:#b7aacd;--text:#f7f2ff;--purple:#8528f5;--pink:#d51eea;--glow:0 0 28px #8e2cff44}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 5%,#291044 0,transparent 40%),var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding-bottom:94px}
-button,input,textarea,select{font:inherit}button{cursor:pointer;color:inherit}a{color:inherit;text-decoration:none}
-.topbar{position:sticky;top:0;z-index:10;background:#0d091cf2;backdrop-filter:blur(18px);border-bottom:1px solid #3c2857;padding:12px 16px;display:flex;align-items:center;gap:11px}
-.brand{display:flex;align-items:center;gap:10px;min-width:0;flex:1}.logo{height:43px;width:43px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#7020ff,#d321e7);font-weight:950;font-size:26px;font-style:italic;box-shadow:var(--glow);border:1px solid #d99bff}.brandname{font-size:18px;font-weight:850;letter-spacing:-.5px;white-space:nowrap}.tagline{font-size:9px;color:#c1b1db;letter-spacing:1.1px;font-weight:700}.avatar-mini{width:34px;height:34px;border-radius:50%;object-fit:cover;background:#35214f;border:1px solid #a75cff}
-.wrap{max-width:1100px;margin:auto;padding:16px}.searchrow{display:flex;gap:10px;margin:4px 0 18px}.searchbox{flex:1;min-width:0;border:1px solid var(--line);background:#17102a;border-radius:28px;padding:12px 15px;color:var(--text);outline:none}.btn{border:1px solid var(--line);border-radius:15px;background:#1b1430;padding:11px 15px;font-weight:750;transition:.15s}.btn:hover{border-color:#b15cff;transform:translateY(-1px)}.primary{border:0;background:linear-gradient(110deg,#7522f5,#d221e8);box-shadow:var(--glow)}.hero{border:1px solid #7a42a0;border-radius:28px;padding:24px 21px;margin:12px 0 20px;background:radial-gradient(circle at 90% 80%,#57219a88,transparent 43%),linear-gradient(135deg,#100a20,#1b0e34);box-shadow:inset 0 0 35px #9b43ff12}.eyebrow{color:#d9a2ff;letter-spacing:2px;font-size:11px;font-weight:850}.hero h1{font-size:clamp(30px,7vw,52px);line-height:1.06;letter-spacing:-1.8px;margin:15px 0}.gradient{background:linear-gradient(90deg,#fff,#d68aff,#e75fff);color:transparent;background-clip:text}.hero p{color:#d0c4df;max-width:640px;font-size:16px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
-.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:25px 0 12px}.sectionhead h2{font-size:22px;margin:0;letter-spacing:-.6px}.muted{color:var(--muted)}.chips{display:flex;gap:8px;overflow:auto;padding:3px 0 10px;scrollbar-width:none}.chip{white-space:nowrap;border:1px solid #3c2a5a;background:#17102a;padding:9px 14px;border-radius:30px}.chip.active{background:linear-gradient(110deg,#7425ed,#bd24e7);border-color:#d58bff;box-shadow:var(--glow)}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.wall{overflow:hidden;background:var(--panel);border:1px solid #3c2a5a;border-radius:19px}.wall img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#201434}.wallbody{padding:11px}.walltitle{font-weight:800;margin-bottom:4px;overflow-wrap:anywhere}.wallmeta{font-size:12px;color:var(--muted)}.wallactions{display:flex;justify-content:space-between;gap:5px;margin-top:10px}.smallbtn{padding:7px 9px;border-radius:11px;background:#1b1430;border:1px solid #3b2a57;font-size:12px}.smallbtn.on{color:#ff75cf;border-color:#bd43e9}
-.card{background:linear-gradient(145deg,#151027,#100b20);border:1px solid #4a3268;border-radius:21px;padding:16px;margin:12px 0}.welcome{display:flex;gap:12px;align-items:center}.welcome .logo{width:54px;height:54px;border-radius:50%}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0}.stat{text-align:center;border:1px solid #342753;border-radius:15px;padding:14px 5px;background:#0d0a20}.stat strong{display:block;font-size:20px}.stat span{color:var(--muted);font-size:11px}.hidden{display:none!important}.view{display:none}.view.active{display:block}.bottomnav{position:fixed;z-index:20;bottom:max(10px,env(safe-area-inset-bottom));left:12px;right:12px;max-width:700px;margin:auto;border:1px solid #66428c;background:rgba(16,11,34,.96);backdrop-filter:blur(20px);border-radius:29px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;padding:8px;box-shadow:0 10px 45px #0008, inset 0 0 18px #8b35df0c}.navbtn{border:1px solid transparent;background:transparent;border-radius:22px;color:#b9a8d1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-height:76px;padding:8px 2px;font-size:12px;font-weight:500;white-space:nowrap}.navbtn .ico{width:27px;height:27px;display:block;flex:0 0 auto}.navbtn .ico svg{width:100%;height:100%;display:block;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.navbtn.active{background:linear-gradient(145deg,#7621ee,#bc22e4);border-color:#c66aff;color:white;box-shadow:0 0 25px #9c2cff66, inset 0 1px 0 #ffffff30}.navbtn:not(.active):active{background:#25143b}.navbtn:focus-visible{outline:2px solid #d59bff;outline-offset:2px}.field{width:100%;background:#0c0819;border:1px solid #4a3268;color:white;border-radius:12px;padding:12px;margin:6px 0 12px;outline:none}.field:focus{border-color:#c15aff}.label{font-size:13px;color:#d5c7e7;font-weight:700}.feedpost{padding:0;overflow:hidden}.feedhead{display:flex;align-items:center;gap:10px;padding:14px}.usercircle{width:39px;height:39px;border-radius:50%;background:linear-gradient(135deg,#7425ed,#d221e8);display:grid;place-items:center;font-weight:900}.postimage{width:100%;max-height:560px;object-fit:cover;display:block;background:#170d2a}.postcopy{padding:0 14px 12px}.postactions{display:flex;gap:8px;padding:0 14px 14px;flex-wrap:wrap}.commentlist{padding:0 14px 12px}.comment{border-top:1px solid #302144;padding:9px 0;font-size:13px}.profilecover{width:100%;height:150px;object-fit:cover;border-radius:15px;background:linear-gradient(135deg,#3c126d,#150d28)}.profileline{display:flex;gap:12px;align-items:center;margin-top:-24px;padding:0 12px}.profileavatar{width:76px;height:76px;border-radius:50%;border:4px solid #120d26;object-fit:cover;background:#291644}.menuitem{width:100%;display:flex;align-items:center;gap:12px;text-align:left;margin:8px 0;padding:14px;border-radius:15px;border:1px solid #3b2858;background:#17102a}.menuitem span:first-child{font-size:23px}.notice{border:1px solid #5d3d7e;border-radius:15px;background:#1b1230;color:#d8c8eb;padding:13px;margin:12px 0}.error{color:#ff9fbf}.success{color:#b6ffd5}.modal{position:fixed;z-index:40;inset:0;background:#05030bd9;display:none;align-items:center;justify-content:center;padding:16px}.modal.show{display:flex}.modalbox{width:min(100%,440px);max-height:90vh;overflow:auto;background:#120c24;border:1px solid #70439b;border-radius:22px;padding:20px;box-shadow:0 20px 70px #0009}.modalhead{display:flex;justify-content:space-between;align-items:center}.close{border:0;background:#25163a;border-radius:50%;width:36px;height:36px}.empty{text-align:center;border:1px dashed #49315f;border-radius:18px;padding:28px;color:var(--muted);grid-column:1/-1}.footer{text-align:center;color:#817493;font-size:11px;padding:30px 0 15px}
-@media(min-width:760px){body{padding-bottom:28px}.wrap{padding:24px}.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.hero{padding:42px}.hero p{font-size:18px}.topbar{padding:14px max(20px,calc((100% - 1100px)/2))}.bottomnav{position:static;margin:20px auto 0}.navbtn{min-height:54px}.wall img{aspect-ratio:3/4}}
-@media(max-width:360px){.brandname{font-size:15px}.tagline{font-size:8px}.logo{width:38px;height:38px}.searchrow{gap:6px}.searchbox{padding:10px}.searchrow .btn{padding:10px;font-size:12px}.navbtn{font-size:10px;min-height:68px;gap:5px}.navbtn .ico{width:23px;height:23px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MomentX - Liquid Glass Experience</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        :root {
+            /* Deep Dark Indigo Background for Liquid Glass Glow */
+            --bg-gradient: linear-gradient(135deg, #090d16 0%, #0d1527 50%, #060911 100%);
+            
+            /* Liquid Glass Variables */
+            --glass-bg: rgba(15, 23, 42, 0.65);
+            --glass-card: rgba(255, 255, 255, 0.04);
+            --glass-border: rgba(0, 242, 254, 0.22);
+            --glass-glow: rgba(0, 242, 254, 0.15);
+            
+            --accent-cyan: #00f2fe;
+            --accent-blue: #3b82f6;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-main);
+            padding-bottom: 90px;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* 1. HEADER */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 18px;
+            background: rgba(9, 13, 22, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+        }
+
+        .icon-btn {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .icon-btn:active { transform: scale(0.92); }
+
+        /* 2. STORY RIBBON */
+        .story-ribbon {
+            display: flex;
+            gap: 12px;
+            padding: 16px;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .story-ribbon::-webkit-scrollbar { display: none; }
+
+        .story-card {
+            min-width: 95px;
+            height: 135px;
+            border-radius: 18px;
+            background: var(--glass-card);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(12px);
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+        .story-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.75; }
+        .story-avatar {
+            position: absolute; top: 8px; left: 8px; width: 30px; height: 30px;
+            border-radius: 50%; border: 2px solid var(--accent-cyan); object-fit: cover;
+        }
+        .story-name {
+            position: absolute; bottom: 8px; left: 8px; right: 8px;
+            font-size: 10px; font-weight: 700; color: #fff;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+
+        /* 3. FEED TABS */
+        .feed-tabs { display: flex; padding: 0 16px 12px 16px; gap: 10px; }
+        .feed-tab {
+            flex: 1; padding: 10px; text-align: center;
+            background: var(--glass-card);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px; font-size: 12px;
+            font-weight: 800; color: var(--text-sub); cursor: pointer;
+        }
+        .feed-tab.active {
+            background: linear-gradient(45deg, var(--accent-cyan), var(--accent-blue));
+            color: #000; border: none;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+        }
+
+        /* 4. POST CARD (CENTER FOCUS LIFT MOTION) */
+        .feed-container {
+            padding: 0 16px;
+            perspective: 1000px;
+        }
+
+        .post-card {
+            background: rgba(15, 23, 42, 0.55);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid var(--glass-border);
+            border-radius: 22px;
+            padding: 16px;
+            margin-bottom: 20px;
+            
+            /* Motion Properties */
+            transform: scale(0.95);
+            opacity: 0.65;
+            transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+                        opacity 0.4s ease,
+                        box-shadow 0.4s ease,
+                        border-color 0.4s ease;
+            will-change: transform, opacity;
+        }
+
+        .post-card.active-center {
+            transform: scale(1.02) translateY(-4px);
+            opacity: 1;
+            border-color: var(--accent-cyan);
+            box-shadow: 0 12px 35px rgba(0, 242, 254, 0.25);
+        }
+
+        .post-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+        .author-box { display: flex; align-items: center; gap: 10px; }
+        .author-avatar { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--accent-cyan); }
+        .author-name { font-size: 14px; font-weight: 800; display: flex; align-items: center; gap: 4px; }
+        .post-time { font-size: 10px; color: var(--text-sub); }
+
+        .follow-btn {
+            padding: 6px 14px; background: rgba(0, 242, 254, 0.12); border: 1px solid var(--accent-cyan);
+            color: var(--accent-cyan); border-radius: 12px; font-size: 11px; font-weight: 800; cursor: pointer;
+        }
+        .post-text { font-size: 13.5px; line-height: 1.5; margin-bottom: 12px; color: #f1f5f9; }
+        .post-media { width: 100%; max-height: 380px; border-radius: 14px; object-fit: cover; margin-bottom: 12px; display: block; }
+
+        .post-actions {
+            display: flex; justify-content: space-around;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 12px; color: var(--text-sub); font-size: 12px; font-weight: 700;
+        }
+        .action-item { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+
+        /* 5. MODAL/OVERLAY VIEWS */
+        .overlay-view {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(9, 13, 22, 0.92);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            z-index: 4000;
+            display: none; flex-direction: column; padding: 20px; overflow-y: auto;
+        }
+        .view-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+
+        /* PROFILE VIEW SPECIFIC */
+        .profile-view-container {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .cover-photo { width: 100%; height: 125px; object-fit: cover; background: #1e293b; }
+        .profile-details { padding: 0 16px 16px 16px; }
+        .profile-top-row { display: flex; justify-content: space-between; align-items: flex-end; margin-top: -40px; margin-bottom: 12px; }
+        .p-avatar { width: 80px; height: 80px; border-radius: 50%; border: 3px solid #0d1527; box-shadow: 0 0 20px rgba(0, 242, 254, 0.4); object-fit: cover; }
+        .edit-profile-btn { padding: 8px 18px; background: rgba(0, 242, 254, 0.1); border: 1px solid var(--accent-cyan); color: var(--accent-cyan); backdrop-filter: blur(10px); border-radius: 20px; font-size: 12px; font-weight: 800; cursor: pointer; }
+        .p-name { font-size: 18px; font-weight: 900; }
+        .p-handle { font-size: 12px; color: var(--text-sub); margin-bottom: 8px; }
+        .p-bio { font-size: 13px; color: #e2e8f0; margin-bottom: 10px; line-height: 1.4; }
+        .p-stats { display: flex; gap: 15px; font-size: 12px; color: var(--text-sub); }
+        .p-stats span { color: var(--text-main); font-weight: 800; }
+
+        .profile-tabs { display: flex; border-top: 1px solid var(--glass-border); margin-top: 12px; }
+        .p-tab { flex: 1; text-align: center; padding: 12px 0; font-size: 12px; font-weight: 700; color: var(--text-sub); cursor: pointer; }
+        .p-tab.active { color: var(--accent-cyan); border-bottom: 2px solid var(--accent-cyan); }
+
+        /* CARD ITEMS */
+        .card-item {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 16px; background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--glass-border); backdrop-filter: blur(15px);
+            border-radius: 18px; margin-bottom: 12px; cursor: pointer; transition: all 0.3s ease;
+        }
+        .card-item:active { transform: scale(0.98); background: rgba(0, 242, 254, 0.08); }
+        .card-info { display: flex; align-items: center; gap: 12px; }
+
+        /* 6. BOTTOM NAVIGATION BAR WITH AUTO-HIDE ANIMATION */
+        .bottom-nav {
+            position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%);
+            width: 92%; height: 65px;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid var(--glass-border); border-radius: 35px; display: flex;
+            justify-content: space-around; align-items: center; z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 0 8px;
+            
+            /* Smooth Hide/Show Transition */
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+            will-change: transform, opacity;
+        }
+
+        /* Class applied when scrolling */
+        .bottom-nav.nav-hidden {
+            transform: translate(-50%, 110px); /* Moves down out of view */
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .nav-link { color: var(--text-sub); cursor: pointer; position: relative; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; }
+        .nav-link.active { color: var(--accent-cyan); }
+
+        .notification-badge {
+            position: absolute; top: 6px; right: 6px; width: 8px; height: 8px;
+            background: var(--accent-cyan); border-radius: 50%; box-shadow: 0 0 10px var(--accent-cyan);
+        }
+
+        .create-post-btn {
+            width: 48px; height: 48px; background: linear-gradient(45deg, var(--accent-cyan), var(--accent-blue));
+            border-radius: 50%; border: none; display: flex; align-items: center; justify-content: center;
+            color: #000; cursor: pointer; box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
-<header class="topbar">
-  <a href="#" class="brand" onclick="go('home');return false">
-    <div class="logo">F.</div><div><div class="brandname">FindingExtraOrdinary</div><div class="tagline">ANIME · WALLPAPERS · COMMUNITY</div></div>
-  </a>
-  <button id="headerAvatar" class="btn hidden" onclick="go('profile')" aria-label="Profile">👤</button>
-  <button class="btn primary" id="loginTop" onclick="openAuth()">Login / Sign up</button>
-</header>
-<main class="wrap">
-  <div class="searchrow"><input id="search" class="searchbox" placeholder="⌕  Search wallpapers, titles, creators..." aria-label="Search"><button class="btn primary" onclick="go('wallpapers')">Explore</button></div>
-  <section id="view-home" class="view active">
-    <div class="hero"><div class="eyebrow">✦ YOUR ANIME WORLD STARTS HERE</div><h1>Find your <span class="gradient">extraordinary.</span><br>Share your anime world.</h1><p>Discover anime-inspired wallpapers, meet creators, save your favourites and build a community together.</p><div class="actions"><button class="btn primary" onclick="go('wallpapers')">Explore Wallpapers →</button><button class="btn" onclick="requireAuth(()=>go('community'))">Share your art</button></div></div>
-    <div class="sectionhead"><h2>Featured Wallpapers</h2><span class="muted">Community picks</span></div>
-    <div class="chips" id="homeChips"><button class="chip active" data-category="All">All</button><button class="chip" data-category="Naruto">Naruto</button><button class="chip" data-category="One Piece">One Piece</button><button class="chip" data-category="Demon Slayer">Demon Slayer</button><button class="chip" data-category="Solo Leveling">Solo Leveling</button></div>
-    <div id="homeWallpapers" class="grid"></div>
-    <div class="sectionhead"><h2>Community</h2><button class="btn" onclick="go('community')">Open feed →</button></div>
-    <div class="card"><div class="welcome"><div class="logo">✦</div><div><strong>Welcome, anime fan!</strong><div class="muted">Follow creators and interact with the community.</div></div></div><div class="stats"><div class="stat"><strong id="statPosts">0</strong><span>POSTS</span></div><div class="stat"><strong id="statMembers">—</strong><span>MEMBERS</span></div><div class="stat"><strong id="statRating">—</strong><span>AVG RATING</span></div></div></div>
-  </section>
-  <section id="view-wallpapers" class="view">
-    <div class="sectionhead"><h2>Anime Wallpapers</h2><button class="btn primary" onclick="requireAuth(()=>openModal('wallModal'))">＋ Upload</button></div>
-    <div class="chips" id="wallChips"><button class="chip active" data-category="All">All</button><button class="chip" data-category="Naruto">Naruto</button><button class="chip" data-category="One Piece">One Piece</button><button class="chip" data-category="Demon Slayer">Demon Slayer</button><button class="chip" data-category="Solo Leveling">Solo Leveling</button><button class="chip" data-category="Other">Other</button></div>
-    <div id="allWallpapers" class="grid"></div>
-  </section>
-  <section id="view-community" class="view">
-    <div class="sectionhead"><h2>Community</h2><span class="muted">Meet the creators</span></div>
-    <div class="card"><div class="welcome"><div class="logo">✦</div><div><strong id="welcomeTitle">Welcome, anime fan!</strong><div class="muted" id="welcomeSub">Sign in to follow creators and interact.</div></div></div><div class="stats"><div class="stat"><strong id="communityPosts">0</strong><span>POSTS</span></div><div class="stat"><strong id="communityMembers">—</strong><span>MEMBERS</span></div><div class="stat"><strong id="communityRating">—</strong><span>AVG RATING</span></div></div><button class="btn primary" onclick="requireAuth(()=>openModal('postModal'))">＋ Create post</button></div>
-    <div class="chips"><button class="chip active" data-feed="latest">Latest</button><button class="chip" data-feed="popular">Popular</button><button class="chip" data-feed="following">Following</button></div>
-    <div id="feed"></div>
-  </section>
-  <section id="view-profile" class="view">
-    <div class="sectionhead"><h2>My Profile</h2><button class="btn" onclick="requireAuth(()=>openModal('editProfileModal'))">Edit profile</button></div>
-    <div class="card"><img id="profileCover" class="profilecover" alt="Profile cover"><div class="profileline"><img id="profileAvatar" class="profileavatar" alt="Profile avatar"><div><strong id="profileName">Your anime profile</strong><div class="muted" id="profileHandle">Sign in to manage your profile</div></div></div><p id="profileBio" class="muted">Your bio will appear here.</p><div class="stats"><div class="stat"><strong id="profilePosts">0</strong><span>POSTS</span></div><div class="stat"><strong id="profileFollowers">0</strong><span>FOLLOWERS</span></div><div class="stat"><strong id="profileFollowing">0</strong><span>FOLLOWING</span></div></div><div class="chips"><button class="chip active" data-profiletab="posts">Posts</button><button class="chip" data-profiletab="wallpapers">Wallpapers</button><button class="chip" data-profiletab="liked">Liked</button></div><div id="profileContent" class="grid"></div></div>
-  </section>
-  <section id="view-menu" class="view">
-    <div class="sectionhead"><h2>Menu</h2><span class="muted">Explore more features</span></div>
-    <button class="menuitem" onclick="go('profile')"><span>👤</span><span><b>My Profile</b><br><small class="muted">View and edit your profile</small></span> <span style="margin-left:auto">›</span></button>
-    <button class="menuitem" onclick="requireAuth(()=>openModal('wallModal'))"><span>▧</span><span><b>Wallpaper Upload</b><br><small class="muted">Share your own wallpapers</small></span><span style="margin-left:auto">›</span></button>
-    <button class="menuitem" onclick="requireAuth(()=>openModal('apkModal'))"><span>🎮</span><span><b>APK Request</b><br><small class="muted">Request anime apps and games</small></span><span style="margin-left:auto">›</span></button>
-    <button class="menuitem" onclick="requireAuth(()=>openModal('notificationsModal'))"><span>♧</span><span><b>Notifications</b><br><small class="muted">Activity and updates</small></span><span style="margin-left:auto">›</span></button>
-    <button class="menuitem" onclick="openModal('aboutModal')"><span>ⓘ</span><span><b>About Us</b><br><small class="muted">About FindingExtraOrdinary</small></span><span style="margin-left:auto">›</span></button>
-    <button id="adminMenu" class="menuitem hidden" onclick="go('admin')"><span>👑</span><span><b>Admin Panel</b><br><small class="muted">Owner only</small></span><span style="margin-left:auto">›</span></button>
-    <button id="logoutBtn" class="menuitem hidden" onclick="logout()"><span>↪</span><span><b>Sign out</b><br><small class="muted">Sign out of your account</small></span></button>
-  </section>
-  <section id="view-admin" class="view">
-    <div class="sectionhead"><h2>👑 Owner Admin Panel</h2><span class="muted">Private</span></div>
-    <div class="notice">Owner-only section. Access is checked in the app and must also be protected by Firebase Security Rules / server-side authorization.</div>
-    <div class="card"><h3>Site overview</h3><div class="stats"><div class="stat"><strong id="adminPostCount">0</strong><span>POSTS</span></div><div class="stat"><strong id="adminUserCount">—</strong><span>MEMBERS</span></div><div class="stat"><strong id="adminRequestCount">0</strong><span>APK REQUESTS</span></div></div><button class="btn" onclick="loadEverything()">↻ Refresh data</button></div>
-    <div class="card"><h3>Latest posts / moderation</h3><div id="adminPosts"></div></div>
-    <div class="card"><h3>APK requests</h3><div id="adminRequests"></div></div>
-    <div class="card"><h3>Owner settings</h3><p class="muted">Website display name: FindingExtraOrdinary</p><p class="muted">Owner email: zulhazsheikh@gmail.com</p><button class="btn" onclick="openModal('aboutModal')">Site information</button></div>
-  </section>
-  <div class="footer">FindingExtraOrdinary · Anime · Wallpapers · Community<br>Share respectfully. Only upload artwork you have permission to share.</div>
-</main>
-<nav class="bottomnav" aria-label="Main navigation">
-  <button class="navbtn active" data-view="home" aria-label="Home"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 10.5 12 3l8.5 7.5V21H5V10.5"/><path d="M9 21v-7h6v7"/></svg></span><span>Home</span></button>
-  <button class="navbtn" data-view="wallpapers" aria-label="Wallpapers"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></span><span>Wallpapers</span></button>
-  <button class="navbtn" data-view="community" aria-label="Community"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3.5"/><path d="M2.5 20v-1.5A5.5 5.5 0 0 1 8 13h2a5.5 5.5 0 0 1 5.5 5.5V20"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.6M18 13.5a4.5 4.5 0 0 1 3.5 4.4V20"/></svg></span><span>Community</span></button>
-  <button class="navbtn" data-view="profile" aria-label="Profile"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2Z"/></svg></span><span>Profile</span></button>
-  <button class="navbtn" data-view="menu" aria-label="Menu"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></span><span>Menu</span></button>
-</nav>
 
-<div id="authModal" class="modal"><div class="modalbox"><div class="modalhead"><h2 id="authTitle">Login / Sign up</h2><button class="close" onclick="closeModal('authModal')">×</button></div><p class="muted">Sign in to post, like, comment, rate and save wallpapers.</p><button class="btn primary" style="width:100%" onclick="googleLogin()">Continue with Google</button><div class="notice" id="authMsg">Or use email and password.</div><label class="label">Email</label><input id="authEmail" class="field" type="email" autocomplete="email" placeholder="you@example.com"><label class="label">Password</label><input id="authPassword" class="field" type="password" autocomplete="current-password" placeholder="At least 6 characters"><div class="actions"><button class="btn primary" onclick="emailLogin()">Login</button><button class="btn" onclick="emailSignup()">Create account</button></div><p id="authError" class="error"></p></div></div>
-<div id="wallModal" class="modal"><div class="modalbox"><div class="modalhead"><h2>Upload wallpaper</h2><button class="close" onclick="closeModal('wallModal')">×</button></div><p class="muted">For this version, add a public image URL. Direct file upload requires Firebase Storage setup and its rules.</p><label class="label">Title</label><input id="wallTitle" class="field" placeholder="Wallpaper title"><label class="label">Image URL (https://…)</label><input id="wallUrl" class="field" type="url" placeholder="https://example.com/image.jpg"><label class="label">Anime category</label><select id="wallCategory" class="field"><option>Naruto</option><option>One Piece</option><option>Demon Slayer</option><option>Solo Leveling</option><option>Other</option></select><label class="label">Description (optional)</label><textarea id="wallDescription" class="field" rows="3" placeholder="Tell the community about it"></textarea><button class="btn primary" onclick="createWallpaper()">Publish wallpaper</button><p id="wallError" class="error"></p></div></div>
-<div id="postModal" class="modal"><div class="modalbox"><div class="modalhead"><h2>Create a post</h2><button class="close" onclick="closeModal('postModal')">×</button></div><label class="label">What's on your mind?</label><textarea id="postText" class="field" rows="4" placeholder="Share your anime thoughts..."></textarea><label class="label">Image URL (optional)</label><input id="postUrl" class="field" type="url" placeholder="https://example.com/image.jpg"><button class="btn primary" onclick="createPost()">Publish post</button><p id="postError" class="error"></p></div></div>
-<div id="editProfileModal" class="modal"><div class="modalbox"><div class="modalhead"><h2>Edit profile</h2><button class="close" onclick="closeModal('editProfileModal')">×</button></div><label class="label">Display name</label><input id="editName" class="field" placeholder="Your name"><label class="label">Avatar image URL</label><input id="editAvatar" class="field" type="url" placeholder="https://…"><label class="label">Cover image URL</label><input id="editCover" class="field" type="url" placeholder="https://…"><label class="label">Bio</label><textarea id="editBio" class="field" rows="3" placeholder="Anime lover..."></textarea><button class="btn primary" onclick="saveProfile()">Save profile</button><p id="profileError" class="error"></p></div></div>
-<div id="apkModal" class="modal"><div class="modalbox"><div class="modalhead"><h2>APK / App request</h2><button class="close" onclick="closeModal('apkModal')">×</button></div><p class="muted">Request an app or game. Only authorized, safe download sources should be shared.</p><label class="label">App or game name</label><input id="apkName" class="field" placeholder="App name"><label class="label">Details</label><textarea id="apkDetails" class="field" rows="3" placeholder="Version, platform, etc."></textarea><button class="btn primary" onclick="submitApkRequest()">Send request</button><p id="apkError" class="error"></p></div></div>
-<div id="notificationsModal" class="modal"><div class="modalbox"><div class="modalhead"><h2>Notifications</h2><button class="close" onclick="closeModal('notificationsModal')">×</button></div><p class="muted">Notifications will appear here when notification records are added by the community backend.</p><div id="notificationList"></div></div></div>
-<div id="aboutModal" class="modal"><div class="modalbox"><div class="modalhead"><h2>About FindingExtraOrdinary</h2><button class="close" onclick="closeModal('aboutModal')">×</button></div><p>FindingExtraOrdinary is an anime wallpaper and community space for fans to discover art, share wallpapers, and connect with creators.</p><p class="muted">Please share content you own or have permission to use.</p></div></div>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo">MomentX ⚡</div>
+        <div class="header-actions">
+            <div class="icon-btn" onclick="openView('settingsModal')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+        </div>
+    </div>
 
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, updateProfile as authUpdateProfile } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
-import { getFirestore, collection, doc, setDoc, getDoc, addDoc, getDocs, query, orderBy, limit, where, updateDoc, deleteDoc, serverTimestamp, increment, runTransaction } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+    <!-- MAIN FEED CONTENT -->
+    <!-- STORY RIBBON -->
+    <div class="story-ribbon">
+        <div class="story-card" style="display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px dashed var(--accent-cyan);" onclick="alert('স্টোরি আপলোড করুন')">
+            <div style="width:30px; height:30px; border-radius:50%; background:var(--accent-cyan); display:flex; align-items:center; justify-content:center; color:#000; font-weight:900;">+</div>
+            <span style="font-size:10px; font-weight:800; color:var(--accent-cyan); margin-top:5px;">Add Story</span>
+        </div>
+        <div class="story-card">
+            <img class="story-img" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300">
+            <img class="story-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100">
+            <span class="story-name">Ayesha</span>
+        </div>
+        <div class="story-card">
+            <img class="story-img" src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=300">
+            <img class="story-avatar" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100">
+            <span class="story-name">Boruto_Hub</span>
+        </div>
+    </div>
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCawCcbTt6oZa4k-gpwmuYKncp3wTfqjNE",
-  authDomain: "findingextraordinary-3854b.firebaseapp.com",
-  projectId: "findingextraordinary-3854b",
-  storageBucket: "findingextraordinary-3854b.firebasestorage.app",
-  messagingSenderId: "233156332357",
-  appId: "1:233156332357:web:b60cd3b3206ef7fcf24c2c",
-  measurementId: "G-V9ZRJ3BC1K"
-};
-const OWNER_EMAIL = "zulhazsheikh@gmail.com";
-let app, auth, db, currentUser = null, isOwner = false, wallpapers = [], posts = [], currentCategory = "All", currentFeed = "latest", profileTab = "posts";
-const demoImages = [
- {title:"Violet Night",category:"Naruto",url:"https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=900&q=85",description:"Purple anime-inspired night"},
- {title:"Dreaming Sky",category:"One Piece",url:"https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=85",description:"A dreamy fantasy landscape"},
- {title:"Moonlit Journey",category:"Demon Slayer",url:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85",description:"Moonlit landscape"},
- {title:"Extraordinary World",category:"Solo Leveling",url:"https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85",description:"A glowing evening sky"}
-];
-const $ = id => document.getElementById(id);
-const esc = s => String(s ?? "").replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const safeUrl = u => { try { const x=new URL(u); return ["https:","http:"].includes(x.protocol)?x.href:""; } catch { return ""; } };
-function setMsg(id, msg, cls="error"){const el=$(id);if(el){el.className=cls;el.textContent=msg;}}
-window.openModal = id => $(id)?.classList.add("show");
-window.closeModal = id => $(id)?.classList.remove("show");
-window.go = view => {
- if(view==="admin" && !isOwner){view="home";alert("Owner-only area.");}
- document.querySelectorAll(".view").forEach(x=>x.classList.toggle("active",x.id==="view-"+view));
- document.querySelectorAll(".navbtn").forEach(x=>x.classList.toggle("active",x.dataset.view===view));
- window.scrollTo({top:0,behavior:"smooth"});
- if(view==="profile") renderProfile();
-};
-window.openAuth = ()=>{ $("authError").textContent="";openModal("authModal"); };
-window.requireAuth = cb => { if(!currentUser){openAuth();setMsg("authMsg","Please sign in first.","error");window._afterAuth=cb;}else cb(); };
-document.querySelectorAll(".navbtn").forEach(b=>b.addEventListener("click",()=>go(b.dataset.view)));
-document.querySelectorAll("[data-category]").forEach(b=>b.addEventListener("click",()=>{currentCategory=b.dataset.category;document.querySelectorAll("[data-category]").forEach(x=>x.classList.toggle("active",x===b));renderWallpapers();}));
-document.querySelectorAll("[data-feed]").forEach(b=>b.addEventListener("click",()=>{currentFeed=b.dataset.feed;document.querySelectorAll("[data-feed]").forEach(x=>x.classList.toggle("active",x===b));renderFeed();}));
-document.querySelectorAll("[data-profiletab]").forEach(b=>b.addEventListener("click",()=>{profileTab=b.dataset.profiletab;document.querySelectorAll("[data-profiletab]").forEach(x=>x.classList.toggle("active",x===b));renderProfileContent();}));
-$("search").addEventListener("input",()=>renderWallpapers());
-try { app=initializeApp(firebaseConfig);auth=getAuth(app);db=getFirestore(app); } catch(e){ console.error(e); showStartupError("Firebase could not initialize. Check the config."); }
-getRedirectResult?.(auth).catch(()=>{});
-onAuthStateChanged(auth, async user=>{
- currentUser=user; isOwner=!!user && user.email?.toLowerCase()===OWNER_EMAIL.toLowerCase();
- $("loginTop").classList.toggle("hidden",!!user);$("headerAvatar").classList.toggle("hidden",!user);$("logoutBtn").classList.toggle("hidden",!user);$("adminMenu").classList.toggle("hidden",!isOwner);
- if(user){$("headerAvatar").textContent=(user.displayName||user.email||"U").slice(0,1).toUpperCase();$("welcomeTitle").textContent=`Welcome, ${user.displayName||"anime fan"}!`;$("welcomeSub").textContent="You’re signed in. Share and interact with the community.";await ensureUserDoc(user);}
- await loadEverything();
- if(window._afterAuth){const cb=window._afterAuth;window._afterAuth=null;closeModal("authModal");cb();}
-});
-async function ensureUserDoc(user){try{const ref=doc(db,"users",user.uid),snap=await getDoc(ref);if(!snap.exists())await setDoc(ref,{uid:user.uid,email:user.email||"",displayName:user.displayName||user.email?.split("@")[0]||"Anime fan",photoURL:user.photoURL||"",coverURL:"",bio:"Anime lover ✨",createdAt:serverTimestamp(),followers:0,following:0},{merge:true});}catch(e){console.warn(e)}}
-window.googleLogin=async()=>{try{await signInWithPopup(auth,new GoogleAuthProvider());closeModal("authModal");}catch(e){try{await signInWithRedirect(auth,new GoogleAuthProvider());}catch(er){setMsg("authError",er.message)}}};
-window.emailLogin=async()=>{try{await signInWithEmailAndPassword(auth,$("authEmail").value.trim(),$("authPassword").value);closeModal("authModal");}catch(e){setMsg("authError",friendly(e))}};
-window.emailSignup=async()=>{try{const cred=await createUserWithEmailAndPassword(auth,$("authEmail").value.trim(),$("authPassword").value);await ensureUserDoc(cred.user);closeModal("authModal");}catch(e){setMsg("authError",friendly(e))}};
-function friendly(e){return e.code==="auth/unauthorized-domain"?"This domain is not authorized in Firebase Authentication settings.":e.code==="auth/weak-password"?"Use a password with at least 6 characters.":e.message||"Something went wrong."}
-window.logout=async()=>{await signOut(auth);go("home");};
-async function loadEverything(){
- try{
-  const w=await getDocs(query(collection(db,"wallpapers"),orderBy("createdAt","desc"),limit(60)));
-  wallpapers=w.docs.map(d=>({id:d.id,...d.data(),kind:"wallpaper"}));
- }catch(e){wallpapers=[];console.warn("wallpapers",e)}
- try{
-  const p=await getDocs(query(collection(db,"posts"),orderBy("createdAt","desc"),limit(60)));
-  posts=p.docs.map(d=>({id:d.id,...d.data(),kind:"post"}));
- }catch(e){posts=[];console.warn("posts",e)}
- renderWallpapers();renderFeed();renderProfile();updateStats();
- if(isOwner)renderAdmin();
-}
-function updateStats(){const count=posts.length+wallpapers.length;["statPosts","communityPosts","adminPostCount"].forEach(id=>$(id).textContent=count);$("statMembers").textContent="—";$("communityMembers").textContent="—";$("statRating").textContent="—";$("communityRating").textContent="—";$("adminUserCount").textContent="—";}
-function allWallpapers(){return [...wallpapers,...demoImages.map((x,i)=>({...x,id:"demo"+i,kind:"wallpaper",demo:true,likes:0,ratingAvg:0,createdAt:null}))];}
-function renderWallpapers(){
- const q=($("search")?.value||"").toLowerCase().trim();
- let items=allWallpapers().filter(w=>(currentCategory==="All"||w.category===currentCategory)&&(!q||`${w.title} ${w.category} ${w.displayName||""}`.toLowerCase().includes(q)));
- const card=w=>`<article class="wall"><img loading="lazy" src="${esc(safeUrl(w.imageUrl||w.url)||"")}" alt="${esc(w.title||"Anime wallpaper")}" onerror="this.style.display='none'"><div class="wallbody"><div class="walltitle">${esc(w.title||"Untitled wallpaper")}</div><div class="wallmeta">${esc(w.category||"Anime")} · ${esc(w.displayName||"Community")}</div><div class="wallactions"><button class="smallbtn ${w.likedBy?.includes(currentUser?.uid)?"on":""}" onclick="likeItem('wallpapers','${w.id}',${!!w.demo})">♥ ${Number(w.likes||0)}</button><button class="smallbtn" onclick="rateWallpaper('${w.id}',${!!w.demo})">★ ${Number(w.ratingAvg||0)||"Rate"}</button><button class="smallbtn" onclick="viewWallpaper('${w.id}',${!!w.demo})">View</button></div></div></article>`;
- const html=items.length?items.map(card).join(""):`<div class="empty">No wallpapers match this search yet.</div>`;
- $("homeWallpapers").innerHTML=html;$("allWallpapers").innerHTML=html;
-}
-window.viewWallpaper=(id,demo)=>{const w=allWallpapers().find(x=>x.id===id);if(w){openModal("aboutModal");$("aboutModal").querySelector("h2").textContent=w.title;$("aboutModal").querySelector("p").textContent=w.description||"Anime wallpaper";}};
-window.likeItem=async(collectionName,id,demo)=>{if(!currentUser){openAuth();return}if(demo){alert("Demo item. Like a community upload to save your like.");return}try{const ref=doc(db,collectionName,id);await runTransaction(db,async tx=>{const s=await tx.get(ref);if(!s.exists())return;const data=s.data(),arr=data.likedBy||[],already=arr.includes(currentUser.uid);tx.update(ref,{likedBy:already?arr.filter(x=>x!==currentUser.uid):[...arr,currentUser.uid],likes:Math.max(0,Number(data.likes||0)+(already?-1:1))});});await loadEverything()}catch(e){alert("Could not like this item: "+friendly(e))}};
-window.rateWallpaper=async(id,demo)=>{if(!currentUser){openAuth();return}if(demo){alert("Demo wallpaper: ratings are available for community uploads.");return}const raw=prompt("Rate this wallpaper from 1 to 5:");const n=Number(raw);if(!Number.isInteger(n)||n<1||n>5)return;try{const ref=doc(db,"wallpapers",id);await runTransaction(db,async tx=>{const s=await tx.get(ref);if(!s.exists())return;const d=s.data(),ratings=d.ratings||{},next={...ratings,[currentUser.uid]:n},vals=Object.values(next).map(Number);tx.update(ref,{ratings:next,ratingAvg:Math.round(vals.reduce((a,b)=>a+b,0)/vals.length*10)/10,ratingCount:vals.length});});await loadEverything()}catch(e){alert("Could not save rating: "+friendly(e))}};
-window.createWallpaper=async()=>{if(!currentUser){openAuth();return}const title=$("wallTitle").value.trim(),url=safeUrl($("wallUrl").value.trim()),category=$("wallCategory").value,description=$("wallDescription").value.trim();if(!title||!url){setMsg("wallError","Enter a title and a valid http(s) image URL.");return}try{await addDoc(collection(db,"wallpapers"),{title,imageUrl:url,category,description,uid:currentUser.uid,displayName:currentUser.displayName||currentUser.email,likes:0,likedBy:[],ratings:{},ratingAvg:0,ratingCount:0,createdAt:serverTimestamp()});closeModal("wallModal");$("wallTitle").value=$("wallUrl").value=$("wallDescription").value="";await loadEverything();go("wallpapers")}catch(e){setMsg("wallError",friendly(e))}};
-window.createPost=async()=>{if(!currentUser){openAuth();return}const text=$("postText").value.trim(),url=safeUrl($("postUrl").value.trim());if(!text&&!url){setMsg("postError","Write something or add an image URL.");return}try{await addDoc(collection(db,"posts"),{text,imageUrl:url,uid:currentUser.uid,displayName:currentUser.displayName||currentUser.email,photoURL:currentUser.photoURL||"",likes:0,likedBy:[],comments:[],createdAt:serverTimestamp()});closeModal("postModal");$("postText").value=$("postUrl").value="";await loadEverything();go("community")}catch(e){setMsg("postError",friendly(e))}};
-function renderFeed(){let items=[...posts];if(currentFeed==="popular")items.sort((a,b)=>(b.likes||0)-(a.likes||0));if(currentFeed==="following"&&!currentUser)items=[];const html=items.map(p=>`<article class="card feedpost"><div class="feedhead"><div class="usercircle">${esc((p.displayName||"A").slice(0,1).toUpperCase())}</div><div><b>${esc(p.displayName||"Anime fan")}</b><div class="wallmeta">${p.createdAt?.toDate?p.createdAt.toDate().toLocaleString():"Community post"}</div></div></div>${p.text?`<div class="postcopy">${esc(p.text)}</div>`:""}${safeUrl(p.imageUrl)?`<img class="postimage" loading="lazy" src="${esc(safeUrl(p.imageUrl))}" alt="Community post image">`:""}<div class="postactions"><button class="smallbtn ${p.likedBy?.includes(currentUser?.uid)?"on":""}" onclick="likeItem('posts','${p.id}',false)">♥ ${Number(p.likes||0)} Like</button><button class="smallbtn" onclick="commentPost('${p.id}')">☏ Comment (${(p.comments||[]).length})</button><button class="smallbtn" onclick="savePost('${p.id}')">▣ Save</button></div><div class="commentlist">${(p.comments||[]).slice(-3).map(c=>`<div class="comment"><b>${esc(c.displayName||"Member")}:</b> ${esc(c.text)}</div>`).join("")}</div></article>`).join("");$("feed").innerHTML=html||`<div class="empty">No community posts yet. Be the first to share something!<br><br><button class="btn primary" onclick="requireAuth(()=>openModal('postModal'))">Create a post</button></div>`;}
-window.commentPost=async id=>{if(!currentUser){openAuth();return}const text=prompt("Write your comment:");if(!text?.trim())return;try{const ref=doc(db,"posts",id);await runTransaction(db,async tx=>{const s=await tx.get(ref);if(!s.exists())return;const d=s.data();tx.update(ref,{comments:[...(d.comments||[]),{uid:currentUser.uid,displayName:currentUser.displayName||currentUser.email,text:text.trim().slice(0,1000),createdAt:Date.now()}]});});await loadEverything()}catch(e){alert("Could not comment: "+friendly(e))}};
-window.savePost=async id=>{if(!currentUser){openAuth();return}try{await setDoc(doc(db,"users",currentUser.uid,"savedPosts",id),{postId:id,savedAt:serverTimestamp()});alert("Saved to your account.")}catch(e){alert(friendly(e))}};
-async function renderProfile(){if(!currentUser){$("profileName").textContent="Your anime profile";$("profileHandle").textContent="Sign in to manage your profile";$("profileBio").textContent="Your bio will appear here.";$("profileAvatar").src="";$("profileCover").src="";$("profileContent").innerHTML='<div class="empty">Login to view your profile and saved activity.<br><br><button class="btn primary" onclick="openAuth()">Login / Sign up</button></div>';return}try{const s=await getDoc(doc(db,"users",currentUser.uid)),d=s.data()||{};$("profileName").textContent=d.displayName||currentUser.displayName||"Anime fan";$("profileHandle").textContent="@"+(currentUser.email||"member");$("profileBio").textContent=d.bio||"Anime lover ✨";$("profileAvatar").src=safeUrl(d.photoURL||currentUser.photoURL||"")||"";$("profileCover").src=safeUrl(d.coverURL||"")||"";$("editName").value=d.displayName||currentUser.displayName||"";$("editAvatar").value=d.photoURL||currentUser.photoURL||"";$("editCover").value=d.coverURL||"";$("editBio").value=d.bio||"";$("profilePosts").textContent=posts.filter(p=>p.uid===currentUser.uid).length;$("profileFollowers").textContent=d.followers||0;$("profileFollowing").textContent=d.following||0;renderProfileContent()}catch(e){console.warn(e)}}
-function renderProfileContent(){if(!currentUser)return;let list=profileTab==="wallpapers"?wallpapers.filter(x=>x.uid===currentUser.uid):profileTab==="posts"?posts.filter(x=>x.uid===currentUser.uid):[];$("profileContent").innerHTML=list.length?list.map(x=>`<div class="wall">${x.imageUrl?`<img src="${esc(safeUrl(x.imageUrl))}" alt="">`:""}<div class="wallbody"><b>${esc(x.title||x.text||"Post")}</b><div class="wallmeta">${esc(x.category||"Community post")}</div></div></div>`).join(""):profileTab==="liked"?'<div class="empty">Liked items will appear here as this feature is expanded.</div>':'<div class="empty">Your posts and wallpapers will appear here.</div>'}
-window.saveProfile=async()=>{if(!currentUser)return;const displayName=$("editName").value.trim().slice(0,60),photoURL=safeUrl($("editAvatar").value.trim()),coverURL=safeUrl($("editCover").value.trim()),bio=$("editBio").value.trim().slice(0,240);try{await setDoc(doc(db,"users",currentUser.uid),{displayName,photoURL,coverURL,bio},{merge:true});if(displayName)await authUpdateProfile(currentUser,{displayName,photoURL:photoURL||null});closeModal("editProfileModal");await renderProfile();alert("Profile updated.")}catch(e){setMsg("profileError",friendly(e))}};
-window.submitApkRequest=async()=>{if(!currentUser){openAuth();return}const name=$("apkName").value.trim(),details=$("apkDetails").value.trim();if(!name){setMsg("apkError","Enter an app or game name.");return}try{await addDoc(collection(db,"apkRequests"),{name,details,uid:currentUser.uid,email:currentUser.email||"",status:"pending",createdAt:serverTimestamp()});closeModal("apkModal");$("apkName").value=$("apkDetails").value="";alert("Request submitted.");if(isOwner)renderAdmin()}catch(e){setMsg("apkError",friendly(e))}};
-async function renderAdmin(){if(!isOwner)return;$("adminPosts").innerHTML=posts.length?posts.slice(0,15).map(p=>`<div class="comment"><b>${esc(p.displayName||"Member")}</b> — ${esc((p.text||"Image post").slice(0,100))}<button class="smallbtn" style="float:right" onclick="deleteContent('posts','${p.id}')">Delete</button></div>`).join(""):"<p class='muted'>No posts yet.</p>";try{const r=await getDocs(query(collection(db,"apkRequests"),orderBy("createdAt","desc"),limit(30)));$("adminRequestCount").textContent=r.size;$("adminRequests").innerHTML=r.docs.map(d=>{const x=d.data();return `<div class="comment"><b>${esc(x.name)}</b> — ${esc(x.details||"No details")} <span class="muted">(${esc(x.status||"pending")})</span><button class="smallbtn" style="float:right" onclick="deleteContent('apkRequests','${d.id}')">Delete</button></div>`}).join("")||"<p class='muted'>No requests yet.</p>"}catch(e){$("adminRequests").textContent="Could not load requests. Check Firestore rules."}}
-window.deleteContent=async(col,id)=>{if(!isOwner){alert("Owner only.");return}if(!confirm("Delete this item?"))return;try{await deleteDoc(doc(db,col,id));await loadEverything()}catch(e){alert("Delete denied. Check owner rules: "+friendly(e))}};
-function showStartupError(msg){document.querySelector("main").insertAdjacentHTML("afterbegin",`<div class="notice error">${esc(msg)}</div>`)}
-loadEverything();
-</script>
-</body></html>
+    <!-- FEED TABS -->
+    <div class="feed-tabs">
+        <div class="feed-tab active" onclick="switchFeedTab(this)">🔥 For You</div>
+        <div class="feed-tab" onclick="switchFeedTab(this)">👥 Following</div>
+    </div>
+
+    <!-- POST FEED -->
+    <div class="feed-container">
+        
+        <!-- Post 1 -->
+        <div class="post-card">
+            <div class="post-header">
+                <div class="author-box">
+                    <img class="author-avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100">
+                    <div>
+                        <div class="author-name">Kayes Chowdhury <span style="color:var(--accent-cyan); font-size:11px;">✓</span></div>
+                        <div class="post-time">🔥 Top Ranked • ২ ঘণ্টা আগে</div>
+                    </div>
+                </div>
+                <button class="follow-btn" onclick="toggleFollow(this)">+ Follow</button>
+            </div>
+            <div class="post-text">নতুন এনিমেশন ও প্রজেক্ট সেটআপ সম্পূর্ণ! কেমন লাগছে থিমটা? ⚡</div>
+            <img class="post-media" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600">
+            <div class="post-actions">
+                <div class="action-item" onclick="likePost(this)">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    <span class="like-count">382</span>
+                </div>
+                <div class="action-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <span>45</span>
+                </div>
+                <div class="action-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    <span>Share</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post-card">
+            <div class="post-header">
+                <div class="author-box">
+                    <img class="author-avatar" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100">
+                    <div>
+                        <div class="author-name">Boruto Two Blue Vortex</div>
+                        <div class="post-time">৫ ঘণ্টা আগে</div>
+                    </div>
+                </div>
+                <button class="follow-btn" onclick="toggleFollow(this)">+ Follow</button>
+            </div>
+            <div class="post-text">Liquid Glassmorphism UI ডিজাইন এখন আমাদের অ্যাপে লাইভ! স্ক্রোল করে পুরো মোশন ভাইব নিন। 🔥</div>
+            <img class="post-media" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600">
+            <div class="post-actions">
+                <div class="action-item" onclick="likePost(this)">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    <span class="like-count">1.5K</span>
+                </div>
+                <div class="action-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <span>120</span>
+                </div>
+                <div class="action-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    <span>Share</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post 3 (For Long Scroll Testing) -->
+        <div class="post-card">
+            <div class="post-header">
+                <div class="author-box">
+                    <img class="author-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100">
+                    <div>
+                        <div class="author-name">Ayesha Rahman</div>
+                        <div class="post-time">৮ ঘণ্টা আগে</div>
+                    </div>
+                </div>
+                <button class="follow-btn" onclick="toggleFollow(this)">+ Follow</button>
+            </div>
+            <div class="post-text">নতুন নেভিগেশন বার টেস্ট করার জন্য নিচের দিকে স্ক্রোল করুন। স্ক্রোল থামলেই বারটি আবার ভাসবে। ✨</div>
+            <img class="post-media" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600">
+            <div class="post-actions">
+                <div class="action-item" onclick="likePost(this)">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    <span class="like-count">920</span>
+                </div>
+                <div class="action-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <span>88</span>
+                </div>
+                <div class="action-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    <span>Share</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- OVERLAY VIEWS -->
+    <!-- PROFILE MODAL -->
+    <div class="overlay-view" id="profileModal">
+        <div class="view-header">
+            <h2 style="font-size: 18px; font-weight: 900; color: var(--accent-cyan);">My Profile</h2>
+            <button onclick="closeView('profileModal')" style="background:transparent; border:none; color:var(--text-main); font-size:22px; cursor:pointer;">✕</button>
+        </div>
+
+        <div class="profile-view-container">
+            <img class="cover-photo" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" alt="Cover">
+            <div class="profile-details">
+                <div class="profile-top-row">
+                    <img class="p-avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100">
+                    <button class="edit-profile-btn" onclick="alert('Edit Profile অপশন খুলবে')">Edit Profile</button>
+                </div>
+                <div class="p-name">Kayes Chowdhury <span style="color:var(--accent-cyan); font-size:13px;">✓</span></div>
+                <div class="p-handle">@kayes_sigma</div>
+                <div class="p-bio">Anime & Tech Creator ⚡ MomentX Founder. Creating the ultimate Liquid Glass Experience.</div>
+                <div class="p-stats">
+                    <div><span>142</span> Following</div>
+                    <div><span>1.2K</span> Followers</div>
+                </div>
+            </div>
+            
+            <div class="profile-tabs">
+                <div class="p-tab active">Posts</div>
+                <div class="p-tab">Replies</div>
+                <div class="p-tab">Highlights</div>
+                <div class="p-tab">Media</div>
+                <div class="p-tab">Likes</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATIONS MODAL -->
+    <div class="overlay-view" id="notificationsModal">
+        <div class="view-header">
+            <h2 style="font-size: 18px; font-weight: 900; color: var(--accent-cyan);">Notifications</h2>
+            <button onclick="closeView('notificationsModal')" style="background:transparent; border:none; color:var(--text-main); font-size:22px; cursor:pointer;">✕</button>
+        </div>
+
+        <div class="card-item" style="border-color: var(--accent-cyan);">
+            <div class="card-info">
+                <div style="width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(45deg, var(--accent-cyan), var(--accent-blue)); display: flex; align-items: center; justify-content: center; color: #000; font-weight: 900;">⚡</div>
+                <div>
+                    <div style="font-size: 13.5px; font-weight: 800; color: var(--accent-cyan);">System Update</div>
+                    <div style="font-size: 11.5px; color: #e2e8f0; margin-top: 2px;">MomentX v2.0 Liquid Glass UI অ্যাপডেট রিলিজ হয়েছে!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-info">
+                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100" style="width:38px; height:38px; border-radius:50%; object-fit:cover;">
+                <div>
+                    <div style="font-size: 13px; font-weight: 800;">Boruto_Hub নতুন একটি পোস্ট করেছে</div>
+                    <div style="font-size: 11px; color: var(--text-sub); margin-top: 2px;">১০ মিনিট আগে</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SETTINGS MODAL -->
+    <div class="overlay-view" id="settingsModal">
+        <div class="view-header">
+            <h2 style="font-size: 18px; font-weight: 900; color: var(--accent-cyan);">Settings and privacy</h2>
+            <button onclick="closeView('settingsModal')" style="background:transparent; border:none; color:var(--text-main); font-size:22px; cursor:pointer;">✕</button>
+        </div>
+
+        <div class="card-item" onclick="alert('Account Settings')">
+            <div class="card-info">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <div>
+                    <div style="font-size: 14px; font-weight: 800;">Your Account</div>
+                    <div style="font-size: 11px; color: var(--text-sub);">See account information, change password.</div>
+                </div>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="card-item" style="border-color: rgba(255, 55, 95, 0.4);" onclick="alert('Logged out successfully!')">
+            <div class="card-info">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff375f" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                <div>
+                    <div style="font-size: 14px; font-weight: 800; color: #ff375f;">Log Out</div>
+                    <div style="font-size: 11px; color: var(--text-sub);">Log out of @kayes_sigma</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAVIGATION BAR -->
+    <div class="bottom-nav" id="bottomNav">
+        <!-- 1. HOME -->
+        <div class="nav-link active" onclick="switchNav(this)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+        </div>
+        
+        <!-- 2. SEARCH -->
+        <div class="nav-link" onclick="switchNav(this); alert('Search পেজ খুলবে');">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </div>
+        
+        <!-- 3. CENTER PLUS BUTTON -->
+        <button class="create-post-btn" onclick="alert('+ Create Post অপশন খুলবে')">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+
+        <!-- 4. NOTIFICATION -->
+        <div class="nav-link" onclick="openView('notificationsModal')">
+            <div class="notification-badge"></div>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+        </div>
+
+        <!-- 5. PROFILE -->
+        <div class="nav-link" onclick="openView('profileModal')">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </div>
+    </div>
+
+    <script>
+        if (window.Telegram && window.Telegram.WebApp) {
+            window.Telegram.WebApp.ready();
+            window.Telegram.WebApp.expand();
+        }
+
+        function openView(id) { document.getElementById(id).style.display = 'flex'; }
+        function closeView(id) { document.getElementById(id).style.display = 'none'; }
+
+        function switchNav(elem) {
+            document.querySelectorAll('.bottom-nav .nav-link').forEach(link => link.classList.remove('active'));
+            elem.classList.add('active');
+        }
+
+        function toggleFollow(btn) {
+            if (btn.innerText === '+ Follow') {
+                btn.innerText = 'Following';
+                btn.style.background = 'rgba(0, 242, 254, 0.25)';
+            } else {
+                btn.innerText = '+ Follow';
+                btn.style.background = 'rgba(0, 242, 254, 0.12)';
+            }
+        }
+
+        function likePost(btn) {
+            let countSpan = btn.querySelector('.like-count');
+            let current = parseInt(countSpan.innerText.replace('K', '000'));
+            countSpan.innerText = current + 1;
+            btn.style.color = '#00f2fe';
+        }
+
+        function switchFeedTab(elem) {
+            document.querySelectorAll('.feed-tab').forEach(tab => tab.classList.remove('active'));
+            elem.classList.add('active');
+        }
+
+        /* AUTO-HIDE BOTTOM NAV ON SCROLL */
+        let isScrollingTimer;
+        const bottomNav = document.getElementById('bottomNav');
+
+        window.addEventListener('scroll', () => {
+            // Hide bottom nav when scrolling starts
+            bottomNav.classList.add('nav-hidden');
+
+            // Clear timer while scrolling continues
+            clearTimeout(isScrollingTimer);
+
+            // Show bottom nav after scrolling stops (800ms)
+            isScrollingTimer = setTimeout(() => {
+                bottomNav.classList.remove('nav-hidden');
+            }, 800);
+        });
+
+        /* SMOOTH CENTER FOCUS MOTION OBSERVER */
+        const observerOptions = {
+            root: null,
+            rootMargin: '-30% 0px -30% 0px',
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active-center');
+                } else {
+                    entry.target.classList.remove('active-center');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.post-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+              </html>
